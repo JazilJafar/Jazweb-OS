@@ -6,7 +6,7 @@ hello guys! Welcome to my Web OS
    2. Terminal 
    3. Paint 🖼️
    4. Time bar ⏳
-
+live url "https://jazweb.netlify.app/"
 Please try my OS and give feedbacks to jazilhani@gmail.com.
 
 Languages used :
