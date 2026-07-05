@@ -1,0 +1,249 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #89c0ba;
+  color: white;
+  overflow: hidden;
+}
+#welcome {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background:linear-gradient(to bottom right, #4CAF50, #7fbcd6);
+}
+#welcome h1 {
+  font-size: 47px;
+  margin-bottom: 20px;
+  font-weight: 100;
+  Font-family: 'Arial Black', sans-serif;
+  Font-style: italic;
+  font-variant: small-caps;
+}
+
+#welcome button {
+  margin-top: 20px;
+  padding: 10px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  background: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+#welcome button:hover {
+  background: #7fbcd6;
+}
+/* level incearseing welcome tick */
+
+#desktop {
+  width: 100vw;
+  height: 100vh;
+  background:linear-gradient(to bottom right, #4CAF50, #7fbcd6);
+  position: relative;
+  background-image: url('./desk.jpg');
+  background-size: cover;
+}
+#topbar {
+  height: 35px;
+  background: #6f6868;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  font-size: 19px;
+}
+#shutdownBtn {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 7px 12px;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#shutdownBtn:hover {
+  background: #a881c7;
+}
+#icons {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 80px;
+}
+.icon {
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  color: rgb(127, 210, 215);
+}
+.iconBox {
+  background: rgba(69, 131, 176, 0.15);
+  width: 50px;
+  height: 50px;
+  border-radius: 16px;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 4px auto;
+}
+.icon:hover .iconBox {
+  background: rgba(94, 187, 158, 0.3);
+}
+#dock {
+  position: absolute;
+  bottom: 10px;
+  left: 70%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.5);
+  padding: 8px;
+  border-radius: 24px;
+  display: flex;
+  gap: 8px;
+}
+ 
+#dock button {
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  border: none;
+  border-radius: 16px;
+  background: #555;
+  color: white;
+  cursor: pointer;
+}
+#dock button:hover {
+  background: #2e9e38;
+}
+
+.win {
+  position: absolute;
+  background: #ecf0f1;
+  color: black;
+  border: 1px solid #999;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
+}
+.winTop {
+  background: #bdc3c7;
+  padding: 6px 8px;
+  cursor: move;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  font-weight: bold;
+}
+ 
+.winBtns span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-left: 5px;
+  cursor: pointer;
+}
+ 
+.closeBtn { background: #e74c3c; }
+.minBtn { background: #f1c40f; }
+.maxBtn { background: #2ecc71; }
+ 
+.winBody {
+  padding: 8px;
+  height: calc(100% - 30px);
+  overflow: auto;
+}
+/* maths starts */
+#calcScreen {
+  background: #222;
+  color: white;
+  text-align: right;
+  padding: 10px;
+  font-size: 24px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+}
+.calcRow {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+ 
+.calcRow button {
+  flex: 1;
+  padding: 12px 0;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background: #ddd;
+  cursor: pointer;
+}
+ 
+.calcRow button:hover {
+  background: #ccc;
+}
+.calcRow button.op {
+  background: #f39c12;
+  color: white;
+}
+ 
+.calcRow button.eq {
+  background: #27ae60;
+  color: white;
+}
+/* hack */
+#termlog {
+  background: rgb(196, 188, 188);
+  color: black;
+  font-family: monospace;
+  height: 180px;
+  overflow-y:auto;
+  padding:6px;
+  font-size:13px;
+}
+#termInputRow {
+  display: flex;
+  background: white;
+  padding:5px;
+}
+
+
+#termInputRow span {
+  color: black;
+  font-family: monospace;
+  margin-right: 5px;
+}
+#termInput {
+  flex: 1;
+  background: white;
+  color: black;
+  border: 5px solid black;
+  font-family: monospace;
+  font-size: 13px;
+  outline: none;
+}
+/* paint start guys */
+.paintTools {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 5px;
+  align-items: center;
+}
+
+.paintTools button {
+  padding: 4px 8px;
+  cursor: pointer;
+}
+canvas {
+  background: white;
+  border: 5px solid #999;
+  cursor: crosshair;
+}
+/* full complete */

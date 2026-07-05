@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #c6d3a8;
+    color: #333;
+    align-items: center;
+}
+h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+p {
+    font-size: 1em;
+    line-height: 1.5;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    align-items: center;
+}
+a {
+    color:black;
+    text-decoration: none;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+}

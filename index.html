@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jazweb</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="welcome">
+  <h1>Jazweb 1</h1>
+  <button id="startBtn">start</button>
+  <br/>
+  <h3 style="color: rgb(0, 0, 0);font-style: italic;font-weight: 30;">Jazweb is a web based operating system that is made by Jazweb team</h3>
+  <h4>click the start button to begin</h4>
+  <br/>
+  <div class="readme-div" style="background: #9dd8bd; padding: 5px 10px; border-radius: 30px; text-align: center;padding-bottom: 10px;">
+  <h5>Click the read me link to get idea first</h5>
+  <a href="./readme.html" class="readme" style="color: #000; text-decoration: none;background: #fff; padding: 5px 10px; border-radius: 10px;">read me</a>
+  </div>
+</div>
+<!-- hello this is my first page do you like this  -->
+     <div id="desktop" style="display:none">
+ 
+  <div id="topbar">
+    <span id="menuText">Jazweb</span>
+    <span id="clock">00:00:00</span>
+    <button id="shutdownBtn" onclick="shutdown()">shutdown</button>
+  </div>
+
+  <div id="icons">
+       <div class="icon" onclick="openApp('calc')">
+        <div class="iconBox">🧮</div>
+          <div>Calcux</div>
+    </div>
+    <div class="icon" onclick="openApp('term')">
+      <div class="iconBox"> ⌨ </div>
+
+      <div>Termijaz </div>
+    </div>
+
+      <div class="icon" onclick="openApp('paint')">
+
+      <div class="iconBox">✏</div>
+          <div>Paintcenter</div>
+    </div>
+  </div>
+  <!-- hooray completed -->
+   <div id="windows"></div>
+ 
+  <div id="dock">
+    <button onclick="openApp('calc')">🧮</button>
+
+    <button onclick="openApp('term')">⌨</button>
+    <button onclick="openApp('paint')">✏</button>
+  </div>
+
+  </div>
+<!-- thank you for using jazweb -->
+  <script src="script.js"></script>
+</body>
+</html>
