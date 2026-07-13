@@ -46,10 +46,14 @@ if (name === 'calc') {
   win.style.width = '400px';
   win.style.height = '400px';
   win.innerHTML = getTermHtml();
-}else if (name === 'paint') {
+} else if (name === 'paint') {
   win.style.width = '450px';
   win.style.height = '400px';
   win.innerHTML = getPaintHtml();
+} else if (name == 'browser') {
+  win.style.width = '500px';
+  win.style.height = '380px';
+  win.innerHTML = getBrowserHtml();
 }
 
 
@@ -88,6 +92,7 @@ win.querySelector('.maxBtn').onclick = function() {
  if (name == 'calc') setupCalc(win);
   if (name == 'term') setupTerm(win);
   if (name == 'paint') setupPaint(win);
+  if (name == 'browser') setupBrowser(win);
 }
 function focusWin(win) {
   zIndex++;
@@ -214,4 +219,29 @@ function setupPaint(win) {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
   };
 }
-// web getted life
+function getBrowserHtml() {
+  return '<div class="winTop"><span>Browser</span><span class="winBtns"><span class="minBtn"></span><span class="maxBtn"></span><span class="closeBtn"></span></span></div>' +
+  '<div class="winBody" style="padding:0">' +
+  '<div class="browserBody">' +
+  '<div class="googleLogo"><span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></div>' +
+  '<div class="searchBox"><input id="browserInput" placeholder="Search Google or type a URL"><span>🔍</span></div>' +
+  '<div class="searchBtnRow"><button id="browserSearchBtn">Google Search</button></div>' +
+  '</div>' +
+  '</div>';
+}
+
+function setupBrowser(win) {
+  var input = win.querySelector('#browserInput');
+  var btn = win.querySelector('#browserSearchBtn');
+
+  function doSearch() {
+    var q = input.value.trim();
+    if (!q) return;
+    window.open('https://www.google.com/search?q=' + encodeURIComponent(q), '_blank');
+  }
+
+  btn.onclick = doSearch;
+  input.addEventListener('keydown', function(e) {
+    if (e.key == 'Enter') doSearch();
+  });
+}
