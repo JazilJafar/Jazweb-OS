@@ -122,7 +122,6 @@ function makeDraggable(win) {
 // maths genios
 function getCalcHtml() {
   return '<div class="winTop"><span>Calculator</span><span class="winBtns"><span class="minBtn"></span><span class="maxBtn"></span><span class="closeBtn"></span></span></div>' +
-  '< class="winBody">' +
   '<div id="calcScreen">0</div>' +
     '<div class="calcRow"><button onclick="calcClear()">C</button><button onclick="calcPress(\'/\')" class="op">/</button><button onclick="calcPress(\'*\')" class="op">*</button><button onclick="calcPress(\'-\')" class="op">-</button></div>' +
     '<div class="calcRow"><button onclick="calcPress(\'7\')">7</button><button onclick="calcPress(\'8\')">8</button><button onclick="calcPress(\'9\')">9</button><button onclick="calcPress(\'+\')" class="op">+</button></div>' +
