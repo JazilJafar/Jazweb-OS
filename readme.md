@@ -1,6 +1,6 @@
 hello guys! Welcome to my Web OS
 
-![Screenshot](./readmestart.png)
+![Alt text](./readmestart)
 
  This is my first web OS.💻
  It have :
