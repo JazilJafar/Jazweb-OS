@@ -12,7 +12,7 @@ hello guys! Welcome to my Web OS
 
 live url "https://jazweb.netlify.app/"
 
-![Alt text](./welcomeme.png)
+![Alt text](welcomeme)
 Please try my OS and give feedbacks to jazilhani@gmail.com.
 
 Languages used :
