@@ -1,4 +1,8 @@
-hello guys! Welcome to my Web OS
+hello guys!
+
+Did you think about an OS that completly run on browser i made it
+
+Welcome to my Web OS
 
 ![Alt text](./readmestart)
 
@@ -17,11 +21,11 @@ Please try my OS and give feedbacks to **jazilhani@gmail.com**.
 
 Languages used :
 
- **1.HTML
+1.**HTML**
  
- 2.CSS
+ 2.**CSS**
  
- 3.JavaScript**
+ 3.**JavaScript**
  
  No frameworks used.
 
